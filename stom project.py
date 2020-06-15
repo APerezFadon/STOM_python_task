@@ -114,7 +114,7 @@ def get_SB_chi(vals, mass_range, nbins, A, lamb, mu, sig, signal_amp):
 
 chi_squared_signal_background = get_SB_chi(signal, (104, 155), 30, sb_fit_params[0], sb_fit_params[1],sb_fit_params[2],sb_fit_params[3],sb_fit_params[4])
 print(f"\tThe reduced chi squared for the background only is {chi_squared_signal_background}")
-print(f"\tThis has a corresponding p value of {chi2.sf(chi_squared_signal_background, n_bins - 2)}")
+print(f"\tThis has a corresponding p value of {chi2.sf(chi_squared_signal_background, n_bins - 5)}")
 
 
 

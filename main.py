@@ -42,6 +42,8 @@ p0 = [160000, 30]
 
 fit_params, _ = curve_fit(to_fit, x, y, p0 = p0)
 
+print(fit_params[1])
+
 fit = lambda x: to_fit(x, *fit_params)
 
 plt.plot(x, list(map(fit, x)))
